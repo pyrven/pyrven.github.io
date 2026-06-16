@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Agentic AI consulting — cloud LLM workflows and local inference deployments for businesses that need both performance and control." />
+  <title>Pyrven — Agentic AI Consulting</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1f3a'/%3E%3Cpath d='M37 11C22 20,16 34,20 42A12 12 0 0 1 44 42C44 30,44 18,37 11Z' fill='%2360a5fa'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="#top" class="brand">
+        <svg class="brand-mark" width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#0b1f3a"/><path d="M37 11C22 20,16 34,20 42A12 12 0 0 1 44 42C44 30,44 18,37 11Z" fill="#60a5fa"/></svg>
+        <span class="brand-name">Pyrven</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Agentic AI consulting</p>
+        <h1>Production-grade AI agents,<br />on the cloud or on your hardware.</h1>
+        <p class="lede">
+          We design, build, and operate agentic workflows for teams that care about
+          results — whether that means orchestrating frontier cloud LLMs or running
+          inference inside your own walls.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Start a conversation</a>
+          <a href="#services" class="btn btn-ghost">See what we do</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>What we do</h2>
+        <p class="section-lede">
+          We work across the full agentic AI stack — from initial workflow design
+          through deployment, evaluation, and ongoing iteration.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Cloud LLM workflows</h3>
+            <p>
+              Multi-step agents built on frontier APIs — Anthropic, OpenAI, Google,
+              and others. Tool use, retrieval, evaluations, and the prompt and
+              orchestration discipline that makes them reliable in production.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Local &amp; private inference</h3>
+            <p>
+              On-prem and air-gapped deployments using open-weight models. Right-sized
+              hardware, quantization strategy, and serving stacks (vLLM, llama.cpp,
+              Ollama) for teams with data residency, latency, or cost constraints.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Hybrid architectures</h3>
+            <p>
+              Routing the right model to the right task — sensitive data stays local,
+              heavy reasoning goes to the cloud. We design the seams so cost,
+              privacy, and quality all stay in scope.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Integration &amp; tooling</h3>
+            <p>
+              Connecting agents to the systems they need to act on — CRMs, internal
+              APIs, document stores, MCP servers. Plus evaluation harnesses and
+              observability so you can ship changes with confidence.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container narrow">
+        <h2>About us</h2>
+        <p>
+          We're a small consulting team focused on a single problem: helping
+          organizations turn the current generation of AI models into reliable,
+          maintainable software systems.
+        </p>
+        <p>
+          Most engagements start with a working prototype within a few weeks, then
+          move into hardening, evaluation, and handoff. We're equally comfortable
+          embedding with an existing engineering team or operating end-to-end.
+        </p>
+        <p>
+          If you're weighing whether to build with a cloud API or run inference
+          yourself — or whether agents are even the right tool for the job — that's
+          exactly the kind of conversation we like to have.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2>Get in touch</h2>
+        <p class="section-lede">
+          Tell us a little about what you're working on and we'll get back to you
+          within a couple of business days.
+        </p>
+
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+          method="POST"
+        >
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required autocomplete="name" />
+          </div>
+
+          <div class="field">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+
+          <div class="field">
+            <label for="company">Company <span class="optional">(optional)</span></label>
+            <input id="company" name="company" type="text" autocomplete="organization" />
+          </div>
+
+          <div class="field">
+            <label for="topic">What are you exploring?</label>
+            <select id="topic" name="topic">
+              <option value="cloud-llm">Cloud LLM workflows</option>
+              <option value="local-inference">Local / private inference</option>
+              <option value="hybrid">Hybrid architecture</option>
+              <option value="integration">Integration &amp; tooling</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+          <input type="hidden" name="_subject" value="New Pyrven inquiry" />
+
+          <button type="submit" class="btn btn-primary">Send inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>&copy; <span id="year">2026</span> Pyrven</span>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
