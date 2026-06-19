@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Agentic AI consulting with the rigor of mission-critical systems. Cloud and local inference, evaluation-first, built to ship." />
   <title>Pyrven — Agentic AI Consulting</title>
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1f3a'/%3E%3Cpath d='M37 11C22 20,16 34,20 42A12 12 0 0 1 44 42C44 30,44 18,37 11Z' fill='%2360a5fa'/%3E%3C/svg%3E" />
 
@@ -14,10 +21,14 @@
   <meta property="og:url" content="https://pyrven.github.io/" />
   <meta property="og:title" content="Pyrven — Agentic AI Consulting" />
   <meta property="og:description" content="Agentic AI consulting with the rigor of mission-critical systems. Cloud and local inference, evaluation-first, built to ship." />
+  <meta property="og:image" content="https://pyrven.github.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Pyrven — Agentic AI Consulting" />
   <meta name="twitter:description" content="Agentic AI consulting with the rigor of mission-critical systems. Cloud and local inference, evaluation-first, built to ship." />
+  <meta name="twitter:image" content="https://pyrven.github.io/og-image.png" />
 
   <script type="application/ld+json">
   {
@@ -34,7 +45,7 @@
   <header class="site-header">
     <div class="container nav-row">
       <a href="#top" class="brand">
-        <svg class="brand-mark" width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#0b1f3a"/><path d="M37 11C22 20,16 34,20 42A12 12 0 0 1 44 42C44 30,44 18,37 11Z" fill="#60a5fa"/></svg>
+        <svg class="brand-mark" width="24" height="24" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="#0b1f3a"/><path d="M37 11C22 20,16 34,20 42A12 12 0 0 1 44 42C44 30,44 18,37 11Z" fill="#60a5fa"/></svg>
         <span class="brand-name">Pyrven</span>
       </a>
       <nav aria-label="Primary">
@@ -48,32 +59,80 @@
   <main id="top">
     <section class="hero">
       <div class="container">
-        <p class="eyebrow">Agentic AI consulting</p>
-        <h1>Agents built like systems<br />that can't fail.</h1>
-        <p class="lede">
-          Pyrven brings the rigor of Mars-mission and robotics engineering to
-          agentic AI. I design workflows where humans and agents are
-          interchangeable at every step — and where the system keeps working
-          after I leave.
-        </p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">Start a conversation</a>
-          <a href="#services" class="btn btn-ghost">See what we do</a>
+        <div class="hero-copy">
+          <p class="eyebrow label hero-load">Agentic AI consulting</p>
+          <h1 class="hero-load">Agents built like systems <span class="h1-accent">that can't fail.</span></h1>
+          <p class="lede hero-load">
+            Pyrven brings the rigor of Mars-mission and robotics engineering to
+            agentic AI. I design workflows where humans and agents are
+            interchangeable at every step — and where the system keeps working
+            after I leave.
+          </p>
+          <div class="hero-cta hero-load">
+            <a href="#contact" class="btn btn-primary">Start a conversation</a>
+            <a href="#services" class="btn btn-ghost">See what we do</a>
+          </div>
+          <ul class="tags hero-load">
+            <li>Aerospace-grade rigor</li>
+            <li>Evaluation-first</li>
+            <li>Cloud + local</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual hero-load">
+          <svg class="hero-instrument" viewBox="0 0 400 400" role="img" aria-label="Pyrven flame instrument">
+            <defs>
+              <radialGradient id="glow" cx="50%" cy="52%" r="50%">
+                <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.55" />
+                <stop offset="45%" stop-color="#3b82f6" stop-opacity="0.18" />
+                <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+              </radialGradient>
+              <linearGradient id="flameFill" x1="0" y1="0" x2="0.4" y2="1">
+                <stop offset="0%" stop-color="#a5d8ff" />
+                <stop offset="50%" stop-color="#60a5fa" />
+                <stop offset="100%" stop-color="#22d3ee" />
+              </linearGradient>
+              <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="3.2" />
+              </filter>
+            </defs>
+
+            <circle cx="200" cy="205" r="180" fill="url(#glow)" />
+
+            <g class="ring-outer" fill="none" stroke="rgba(140,165,210,0.28)" stroke-width="1">
+              <circle cx="200" cy="200" r="168" stroke-dasharray="2 12" />
+            </g>
+            <g class="ring-mid" fill="none" stroke="rgba(96,165,250,0.4)" stroke-width="1.25">
+              <circle cx="200" cy="200" r="140" stroke-dasharray="1 22" />
+            </g>
+            <circle cx="200" cy="200" r="112" fill="none" stroke="rgba(140,165,210,0.16)" stroke-width="1" />
+
+            <g class="flame-core">
+              <g transform="translate(67 58) scale(4.6)" opacity="0.55" filter="url(#soft)">
+                <path d="M37 11C22 20,16 34,20 42A12 12 0 0 1 44 42C44 30,44 18,37 11Z" fill="#38bdf8" />
+              </g>
+              <g transform="translate(67 58) scale(4.6)">
+                <path d="M37 11C22 20,16 34,20 42A12 12 0 0 1 44 42C44 30,44 18,37 11Z" fill="url(#flameFill)" />
+              </g>
+            </g>
+          </svg>
         </div>
       </div>
     </section>
 
     <section id="services" class="section">
       <div class="container">
-        <h2>What I do</h2>
-        <p class="section-lede">
+        <p class="label reveal">01 / Services</p>
+        <h2 class="reveal">What I do</h2>
+        <p class="section-lede reveal">
           I work across the full agentic stack — from workflow design and
           evaluation through inference, deployment, and the unglamorous parts
           that decide whether anything actually ships.
         </p>
 
-        <div class="grid">
+        <div class="grid reveal reveal-stagger">
           <article class="card">
+            <span class="card-index">01</span>
             <h3>Agentic workflow design</h3>
             <p>
               Multi-step pipelines where each task can be handed off between a
@@ -84,6 +143,7 @@
           </article>
 
           <article class="card">
+            <span class="card-index">02</span>
             <h3>Cloud &amp; local inference</h3>
             <p>
               Equal facility with frontier APIs (Anthropic, OpenAI, Google) and
@@ -94,6 +154,7 @@
           </article>
 
           <article class="card">
+            <span class="card-index">03</span>
             <h3>Creative &amp; design pipelines</h3>
             <p>
               Asset ingestion, normalization, validation, and generation —
@@ -104,6 +165,7 @@
           </article>
 
           <article class="card">
+            <span class="card-index">04</span>
             <h3>Simulation &amp; evaluation</h3>
             <p>
               Aerospace and robotics taught me you don't ship what you haven't
@@ -116,22 +178,23 @@
     </section>
 
     <section id="about" class="section section-alt">
-      <div class="container narrow">
-        <h2>About me</h2>
-        <p>
+      <div class="container narrow about-body">
+        <p class="label reveal">02 / About</p>
+        <h2 class="reveal">About me</h2>
+        <p class="reveal">
           I'm an engineer whose career has run from aerospace systems on Mars
           missions through mobile development, robotics, and simulation work,
           into current research in agentic AI. The throughline: software that
           has to work the first time, in production, with humans in the loop.
         </p>
-        <p>
+        <p class="reveal">
           My specialty is agentic systems where every step is structured for
           seamless handoff between a human and an agent — the only pattern I've
           seen scale reliably in real environments. I'm equally fluent in cloud
           LLM APIs and on-prem inference stacks, and I treat simulation-driven
           evaluation as a non-negotiable, not a luxury.
         </p>
-        <p>
+        <p class="reveal">
           Engagements run hourly within a budget cap you set, so scope can flex
           without surprise invoices. I start with a short scoping conversation —
           sometimes that conversation ends with me telling you agents aren't the
@@ -142,14 +205,15 @@
 
     <section id="contact" class="section">
       <div class="container narrow">
-        <h2>Get in touch</h2>
-        <p class="section-lede">
+        <p class="label reveal">03 / Contact</p>
+        <h2 class="reveal">Get in touch</h2>
+        <p class="section-lede reveal">
           Tell me what you're working on. Discovery conversations are free, and
           engagements run hourly within a budget cap you set.
         </p>
 
         <form
-          class="contact-form"
+          class="contact-form reveal"
           action="https://formspree.io/f/xlgkvleg"
           method="POST"
         >
@@ -195,13 +259,32 @@
 
   <footer class="site-footer">
     <div class="container footer-row">
-      <span>&copy; <span id="year">2026</span> Pyrven</span>
-      <a href="#top">Back to top</a>
+      <span>&copy; <span id="year">2026</span> PYRVEN</span>
+      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll-reveal — progressive enhancement, reduced-motion aware
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var els = document.querySelectorAll('.reveal');
+      if (reduce || !('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+      els.forEach(function (el) { io.observe(el); });
+    })();
   </script>
 </body>
 </html>
